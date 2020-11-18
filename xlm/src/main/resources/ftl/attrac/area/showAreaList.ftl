@@ -8,21 +8,23 @@
 </head>
 
 <body>
-
-
-<div class="lenos-search">
-    <div class="len-form-item">
-         <div class="layui-btn-group">
+<!--筛选条件-->
+<blockquote class="layui-elem-quote">
+    <div class="showFilter clearfix">
+        <div class="iptInline">
+            <div class="iptCon">
+                <input type="text" class="allIpt" id="inputValue" placeholder="请输入父节点id" style="width:200px;">
+                <a class="layui-btn layui-btn-sm" id="solr" ">查询</a>
                 <@shiro.hasPermission name="attract:showAddCityCase">
                     <button class="layui-btn layui-btn-normal  layui-btn-sm" data-type="add">
                         <i class="layui-icon">&#xe608;</i>新增
                     </button>
                 </@shiro.hasPermission>
-                <input class="layui-input" height="20px" value="" id="inputValue">
-                <button type="button" class="layui-btn layui-btn-normal layui-btn layui-btn-sm" data-type="select">查询</button>
+            </div>
         </div>
     </div>
-</div>
+</blockquote>
+
 <table id="citycaseList" width="100%" lay-filter="citycase"></table>
 <script type="text/html" id="bar">
     <@shiro.hasPermission name="attract:updateCityCase">
@@ -41,14 +43,14 @@
             $(".select .select-on").click();
         }
     }
-    var val=$("#inputValue").val();
+    var tableIns;
     layui.use('table', function () {
         table = layui.table;
         //方法级渲染
-        table.render({
+        tableIns=table.render({
             id: 'citycaseList',
             elem: '#citycaseList'
-            , url: 'showAttracAreaList?type='+val
+            , url: 'showAttracAreaList'
             , parseData: function (res) {
                 console.log(JSON.stringify(res.data.records))
                 return {
@@ -73,8 +75,13 @@
             ]]
             , page: true,
             height: 'full-100'
-        });
 
+
+        });
+        $('#solr').on('click', function(){
+               var type = $(this).data('type');
+               active[type] ? active[type].call(this) : '';
+           });
         var $ = layui.$, active = {
 
             add: function () {
@@ -99,6 +106,21 @@
             } else if (obj.event === 'edit') {
                 update('编辑案例', 'qj/citycase/updateCityCase?id=' + data.id, 700, 450);
             }
+
+             //搜索
+                var $ = layui.$, active = {
+                    reload: function(){
+                        //执行重载
+                        table.reload('citycaseList', {
+                            page: {
+                                curr: 1 //重新从第 1 页开始
+                            }
+                            ,where: {
+                                type: $('#inputValue').val()//关键字
+                            }
+                        });
+                    }
+                };
         });
 
         $('.len-form-item .layui-btn,.layui-col-md12 .layui-btn').on('click', function () {
@@ -191,10 +213,6 @@
         });
     }
 
-    function cx(){
-        var val=$("#inputValue").val();
-        layui.table.reload("citycaseList");
-    }
 </script>
 </body>
 </html>
