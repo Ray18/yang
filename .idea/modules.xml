@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/xlm/xlm.iml" filepath="$PROJECT_DIR$/xlm/xlm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xy-core/xy-core.iml" filepath="$PROJECT_DIR$/xy-core/xy-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xy-sys/xy-sys.iml" filepath="$PROJECT_DIR$/xy-sys/xy-sys.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xy-web/xy-web.iml" filepath="$PROJECT_DIR$/xy-web/xy-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yang.iml" filepath="$PROJECT_DIR$/yang.iml" />
+    </modules>
+  </component>
+</project>

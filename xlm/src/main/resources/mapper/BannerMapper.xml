@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xi.xlm.mapper.BannerMapper">
+    <resultMap id="BaseResultMap" type="com.xi.xlm.entity.Banner">
+        <!--
+          WARNING - @mbg.generated
+        -->
+        <id column="id" jdbcType="VARCHAR" property="id"/>
+        <result column="banner_img" jdbcType="VARCHAR" property="bannerImg"/>
+        <result column="banner_details"  property="bannerDetails"/>
+        <result column="update_date"  property="updateDate"/>
+        <result column="update_by"  property="updateBy"/>
+        <result column="create_by"  property="createBy"/>
+        <result column="create_date" property="createDate"/>
+        <result column="del_flag" property="delFlag"/>
+        <result column="up_state" property="upState"/>
+    </resultMap>
+
+    <select id="selectListByPage" parameterType="com.xi.xlm.entity.Banner" resultMap="BaseResultMap">
+        SELECT *
+        from attrac_banner
+        order by create_date desc
+  </select>
+
+
+</mapper>

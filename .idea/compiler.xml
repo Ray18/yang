@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="xy-core" />
+        <module name="xy-web" />
+        <module name="xy-sys" />
+        <module name="xlm" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="xlm" target="1.8" />
+      <module name="xy-core" target="1.8" />
+      <module name="xy-sys" target="1.8" />
+      <module name="xy-web" target="1.8" />
+      <module name="yang" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="xlm" options="-parameters" />
+      <module name="xy-core" options="-parameters" />
+      <module name="xy-sys" options="-parameters" />
+      <module name="xy-web" options="-parameters" />
+    </option>
+  </component>
+</project>

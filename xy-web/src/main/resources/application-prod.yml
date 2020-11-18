@@ -1,0 +1,132 @@
+server:
+  port: 8081
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  devtools:
+    restart:
+      enabled: true
+  datasource:
+    url: jdbc:mysql://121.40.200.150:3306/xlm_test?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: Abc#123!
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    sqlScriptEncoding: UTF-8
+    hikari:
+      minimum-idle: 5
+      maximum-pool-size: 15
+      auto-commit: true
+      idle-timeout: 30000
+      pool-name: DatebookHikariCP
+      max-lifetime: 1800000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
+  redis:
+    host: 121.40.200.150
+    port: 6379
+    password: Redis2019
+    timeout: 3000
+    maxRetryCount: 10
+    second: 300
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+  servlet:
+    multipart:
+      max-file-size: 50MB
+
+  session:
+    store-type: redis
+
+  http:
+    encoding:
+      force: true
+
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS
+
+mybatis-plus:
+  type-aliases-package: com.len.entity ,com.xi.xlm.entity
+  mapper-locations: classpath*:mapper/*.xml
+  check-config-location: true
+
+  global-config:
+    db-config:
+      id-type: UUID
+      field-strategy: ignored
+      column-underline: true
+      logic-delete-field: delFlag
+
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+
+lenosp:
+  uploadPath: /alidata1/project/xlm/img
+  isDayType: false
+  localDomain: https://kfb.hzboc.com/
+
+logging:
+  file: /alidata1/project/xlm/logs/xy-log.log
+  level:
+    root: info
+    com:
+      xi:
+        xlm: debug
+    springfox:
+      documentation:
+        schema: info
+    org:
+      springframework:
+        web:
+          filter:
+            CommonsRequestLoggingFilter: debug
+
+
+
+
+dataType: mysql
+
+wx:
+  applet:
+    appid: wx2180bee8b0490aab
+    appsecret: e9dd8ba920eddb5f5ed4ede358bdad5a
+
+wxpay:
+  appId: wx2180bee8b0490aab
+  appSecret:
+  certPath: E:/bocai/喜临门/cert/apiclient_cert.p12
+  domain: https://kfb.hzboc.com/w/att/product/notifyOrder
+  mchId: 1601871384
+  partnerKey: xilinmenzhaoshang1601871384xlmzs
+
+redis:
+  prefix:
+
+swagger:
+  enable: true
+
+team:
+  urls:
+    - /w/mini/test
+    - /test/miniLogin
+    - /test/postTest
+    - /test/postTestN
+    - /w/mini/unauthorized/**
+    - /w/mini/**
+    - /w/att/index/**
+    - /w/att/product/turnProductList
+    - /w/hotel/index/**
+    - /w/hotel/integralGoods/getGoodsList
+    - /w/hotel/hotelInformation/**
+    - /w/hotel/hotelCase/**
+    - /w/hotel/hotelProduct/product
+    - /w/att/product/notifyOrder
+    - /m/attractDealerInfo/showAttracAreaList

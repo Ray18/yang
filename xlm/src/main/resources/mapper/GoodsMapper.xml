@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xi.xlm.mapper.GoodsMapper">
+    <resultMap id="BaseResultMap" type="com.xi.xlm.entity.Goods">
+        <!--
+          WARNING - @mbg.generated
+        -->
+        <id column="id" jdbcType="VARCHAR" property="id"/>
+        <result column="goods_name" jdbcType="VARCHAR" property="goodsName"/>
+        <result column="goods_num" jdbcType="INTEGER" property="goodsNum"/>
+        <result column="goods_unit" jdbcType="VARCHAR" property="goodsUnit"/>
+        <result column="goods_type" jdbcType="INTEGER" property="goodsType"/>
+        <result column="goods_use_day" jdbcType="VARCHAR" property="goodsUseDay"/>
+        <result column="goods_accumulate_num" jdbcType="INTEGER" property="goodsAccumulateNum"/>
+        <result column="created_date" jdbcType="TIMESTAMP" property="createdDate"/>
+        <result column="del" jdbcType="VARCHAR" property="del"/>
+    </resultMap>
+
+    <select id="selectListByPage" parameterType="com.xi.xlm.entity.Goods" resultMap="BaseResultMap">
+        SELECT *
+        from goods
+        <where>
+            del = 1
+            <if test="goodsName!=null and goodsName!=''">and goods_name = #{goodsName}</if>
+        </where>
+        order by created_date desc
+    </select>
+
+
+</mapper>

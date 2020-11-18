@@ -1,0 +1,741 @@
+2020-08-13 09:00:52.200  INFO 33092 --- [main] test.BootTest                            : The following profiles are active: mysql-dev
+2020-08-13 09:00:53.975  INFO 33092 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-08-13 09:00:53.978  INFO 33092 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-08-13 09:00:54.044  INFO 33092 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50ms. Found 0 Redis repository interfaces.
+2020-08-13 09:00:54.154  WARN 33092 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-08-13 09:00:54.277  WARN 33092 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'sysUserMapper' and 'com.len.mapper.SysUserMapper' mapperInterface. Bean already defined with the same name!
+2020-08-13 09:00:54.620  INFO 33092 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=afb898a0-03eb-3559-a83c-62a7d5b7024f
+2020-08-13 09:00:54.744  INFO 33092 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2020-08-13 09:00:54.753  INFO 33092 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2020-08-13 09:00:54.765  INFO 33092 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2020-08-13 09:00:54.783  INFO 33092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.len.config.ShiroConfig$$EnhancerBySpringCGLIB$$e5ee481f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:00:54.827  INFO 33092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'transactionalConfig' of type [com.len.config.TransactionalConfig$$EnhancerBySpringCGLIB$$3b7208b7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:00:54.911  INFO 33092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getRetryLimitCredentialsMatcher' of type [com.len.core.shiro.RetryLimitCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:00:54.998  INFO 33092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:00:55.029  INFO 33092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$b1179567] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:00:55.091  INFO 33092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataSource' of type [org.springframework.aop.scope.ScopedProxyFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:00:55.091  INFO 33092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource$$EnhancerBySpringCGLIB$$99633e3f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:00:55.761  INFO 33092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:00:55.781  INFO 33092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:00:55.783  INFO 33092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysUserMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:00:55.787  INFO 33092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysUserMapper' of type [com.sun.proxy.$Proxy122] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:00:55.797  INFO 33092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysRoleUserMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:00:55.800  INFO 33092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysRoleUserMapper' of type [com.sun.proxy.$Proxy123] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:00:55.833  INFO 33092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysRoleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:00:55.835  INFO 33092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysRoleMapper' of type [com.sun.proxy.$Proxy124] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:00:55.868  INFO 33092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysRoleMenuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:00:55.870  INFO 33092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysRoleMenuMapper' of type [com.sun.proxy.$Proxy125] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:00:55.873  INFO 33092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'roleMenuServiceImpl' of type [com.len.service.impl.RoleMenuServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:00:55.893  INFO 33092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'roleUserServiceImpl' of type [com.len.service.impl.RoleUserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:00:55.893  INFO 33092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'roleServiceImpl' of type [com.len.service.impl.RoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:00:55.926  INFO 33092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysMenuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:00:55.929  INFO 33092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysMenuMapper' of type [com.sun.proxy.$Proxy126] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:00:55.938  INFO 33092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'menuServiceImpl' of type [com.len.service.impl.MenuServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:00:55.939  INFO 33092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysUserServiceImpl' of type [com.len.service.impl.SysUserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:00:55.940  INFO 33092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userLoginRealm' of type [com.len.core.shiro.LoginRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:00:57.072  INFO 33092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getAtLeastOneSuccessfulStrategy' of type [org.apache.shiro.authc.pam.AtLeastOneSuccessfulStrategy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:00:57.079  INFO 33092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getMyModularRealmAuthenticator' of type [com.len.config.MyModularRealmAuthenticator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:00:57.088  INFO 33092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisSessionDAO' of type [org.crazycake.shiro.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:00:57.108  INFO 33092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:00:57.128  INFO 33092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:00:57.157  INFO 33092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getPermissionFilter' of type [com.len.core.filter.PermissionFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:00:57.169  INFO 33092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getVerfityCodeFilter' of type [com.len.core.filter.VerfityCodeFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:00:57.326  INFO 33092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getAuthorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:00:57.408  INFO 33092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$734f28cd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:00:57.686  INFO 33092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration$$EnhancerBySpringCGLIB$$de40e3fc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:00:57.732  INFO 33092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:00:57.804  INFO 33092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$8f692bca] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:00:59.019  INFO 33092 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2020-08-13 09:00:59.024  INFO 33092 --- [main] org.quartz.simpl.SimpleThreadPool        : Job execution threads will use class loader of thread: main
+2020-08-13 09:00:59.043  INFO 33092 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-08-13 09:00:59.044  INFO 33092 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.0 created.
+2020-08-13 09:00:59.045  INFO 33092 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2020-08-13 09:00:59.046  INFO 33092 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-08-13 09:00:59.047  INFO 33092 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'DefaultQuartzScheduler' initialized from an externally provided properties instance.
+2020-08-13 09:00:59.047  INFO 33092 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.0
+2020-08-13 09:00:59.048  INFO 33092 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: com.len.core.quartz.MyJobFactory@430aae8e
+2020-08-13 09:01:03.254  WARN 33092 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-08-13 09:01:03.255  INFO 33092 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-13 09:01:03.270  INFO 33092 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@787a0fd6
+2020-08-13 09:01:03.703  INFO 33092 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-13 09:01:04.183  INFO 33092 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-08-13 09:01:05.237  WARN 33092 --- [main] o.s.c.n.a.ArchaiusAutoConfiguration      : No spring.application.name found, defaulting to 'application'
+2020-08-13 09:01:05.239  WARN 33092 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-08-13 09:01:05.239  INFO 33092 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-13 09:01:06.532  WARN 33092 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2020-08-13 09:01:08.643  INFO 33092 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-08-13 09:01:08.896  INFO 33092 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-08-13 09:01:08.909 ERROR 33092 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.UnsupportedOperationException: MockServerContainer does not support addEndpoint(Class)
+	at org.springframework.test.context.web.socket.MockServerContainer.addEndpoint(MockServerContainer.java:127) ~[spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.web.socket.server.standard.ServerEndpointExporter.registerEndpoint(ServerEndpointExporter.java:156) ~[spring-websocket-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.web.socket.server.standard.ServerEndpointExporter.registerEndpoints(ServerEndpointExporter.java:134) ~[spring-websocket-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.web.socket.server.standard.ServerEndpointExporter.afterSingletonsInstantiated(ServerEndpointExporter.java:112) ~[spring-websocket-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:864) ~[spring-beans-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744) ~[spring-boot-2.1.12.RELEASE.jar:2.1.12.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391) ~[spring-boot-2.1.12.RELEASE.jar:2.1.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-2.1.12.RELEASE.jar:2.1.12.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) [spring-boot-test-2.1.12.RELEASE.jar:2.1.12.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) [spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) [spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) [spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) [spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) [spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) [spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) [junit-4.12.jar:4.12]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68) [junit-rt.jar:na]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33) [junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230) [junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58) [junit-rt.jar:na]
+
+2020-08-13 09:01:08.941  INFO 33092 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-08-13 09:01:08.945  INFO 33092 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application UNKNOWN with eureka with status DOWN
+2020-08-13 09:01:08.946  INFO 33092 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2020-08-13 09:01:08.958  INFO 33092 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2020-08-13 09:01:08.958  INFO 33092 --- [main] org.quartz.core.QuartzScheduler          : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+2020-08-13 09:01:08.958  INFO 33092 --- [main] org.quartz.core.QuartzScheduler          : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+2020-08-13 09:01:08.959  INFO 33092 --- [main] org.quartz.core.QuartzScheduler          : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-08-13 09:01:08.985 ERROR 33092 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@c0c2f8d] to prepare test instance [test.BootTest@60251ddb]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125) ~[spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) ~[spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) ~[spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) [junit-4.12.jar:4.12]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68) [junit-rt.jar:na]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33) [junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230) [junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58) [junit-rt.jar:na]
+Caused by: java.lang.UnsupportedOperationException: MockServerContainer does not support addEndpoint(Class)
+	at org.springframework.test.context.web.socket.MockServerContainer.addEndpoint(MockServerContainer.java:127) ~[spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.web.socket.server.standard.ServerEndpointExporter.registerEndpoint(ServerEndpointExporter.java:156) ~[spring-websocket-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.web.socket.server.standard.ServerEndpointExporter.registerEndpoints(ServerEndpointExporter.java:134) ~[spring-websocket-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.web.socket.server.standard.ServerEndpointExporter.afterSingletonsInstantiated(ServerEndpointExporter.java:112) ~[spring-websocket-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:864) ~[spring-beans-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744) ~[spring-boot-2.1.12.RELEASE.jar:2.1.12.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391) ~[spring-boot-2.1.12.RELEASE.jar:2.1.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-2.1.12.RELEASE.jar:2.1.12.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) ~[spring-boot-test-2.1.12.RELEASE.jar:2.1.12.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	... 24 common frames omitted
+
+2020-08-13 09:02:58.134  INFO 22904 --- [main] test.BootTest                            : The following profiles are active: mysql-dev
+2020-08-13 09:03:00.556  INFO 22904 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-08-13 09:03:00.560  INFO 22904 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-08-13 09:03:00.642  INFO 22904 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63ms. Found 0 Redis repository interfaces.
+2020-08-13 09:03:00.767  WARN 22904 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-08-13 09:03:00.893  WARN 22904 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'sysUserMapper' and 'com.len.mapper.SysUserMapper' mapperInterface. Bean already defined with the same name!
+2020-08-13 09:03:01.214  INFO 22904 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=afb898a0-03eb-3559-a83c-62a7d5b7024f
+2020-08-13 09:03:01.334  INFO 22904 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2020-08-13 09:03:01.346  INFO 22904 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2020-08-13 09:03:01.359  INFO 22904 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2020-08-13 09:03:01.379  INFO 22904 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.len.config.ShiroConfig$$EnhancerBySpringCGLIB$$e5ee481f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:03:01.432  INFO 22904 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'transactionalConfig' of type [com.len.config.TransactionalConfig$$EnhancerBySpringCGLIB$$3b7208b7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:03:01.560  INFO 22904 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getRetryLimitCredentialsMatcher' of type [com.len.core.shiro.RetryLimitCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:03:01.668  INFO 22904 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:03:01.705  INFO 22904 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$b1179567] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:03:01.781  INFO 22904 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataSource' of type [org.springframework.aop.scope.ScopedProxyFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:03:01.782  INFO 22904 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource$$EnhancerBySpringCGLIB$$590cc076] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:03:02.511  INFO 22904 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:03:02.530  INFO 22904 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:03:02.532  INFO 22904 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysUserMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:03:02.539  INFO 22904 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysUserMapper' of type [com.sun.proxy.$Proxy122] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:03:02.552  INFO 22904 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysRoleUserMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:03:02.555  INFO 22904 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysRoleUserMapper' of type [com.sun.proxy.$Proxy123] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:03:02.619  INFO 22904 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysRoleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:03:02.625  INFO 22904 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysRoleMapper' of type [com.sun.proxy.$Proxy124] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:03:02.681  INFO 22904 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysRoleMenuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:03:02.685  INFO 22904 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysRoleMenuMapper' of type [com.sun.proxy.$Proxy125] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:03:02.690  INFO 22904 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'roleMenuServiceImpl' of type [com.len.service.impl.RoleMenuServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:03:02.723  INFO 22904 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'roleUserServiceImpl' of type [com.len.service.impl.RoleUserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:03:02.723  INFO 22904 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'roleServiceImpl' of type [com.len.service.impl.RoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:03:02.778  INFO 22904 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysMenuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:03:02.785  INFO 22904 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysMenuMapper' of type [com.sun.proxy.$Proxy126] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:03:02.799  INFO 22904 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'menuServiceImpl' of type [com.len.service.impl.MenuServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:03:02.801  INFO 22904 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysUserServiceImpl' of type [com.len.service.impl.SysUserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:03:02.802  INFO 22904 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userLoginRealm' of type [com.len.core.shiro.LoginRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:03:04.335  INFO 22904 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getAtLeastOneSuccessfulStrategy' of type [org.apache.shiro.authc.pam.AtLeastOneSuccessfulStrategy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:03:04.347  INFO 22904 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getMyModularRealmAuthenticator' of type [com.len.config.MyModularRealmAuthenticator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:03:04.359  INFO 22904 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisSessionDAO' of type [org.crazycake.shiro.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:03:04.377  INFO 22904 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:03:04.403  INFO 22904 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:03:04.431  INFO 22904 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getPermissionFilter' of type [com.len.core.filter.PermissionFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:03:04.448  INFO 22904 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getVerfityCodeFilter' of type [com.len.core.filter.VerfityCodeFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:03:04.538  INFO 22904 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getAuthorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:03:04.638  INFO 22904 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$734f28cd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:03:04.936  INFO 22904 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration$$EnhancerBySpringCGLIB$$de40e3fc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:03:04.987  INFO 22904 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:03:05.069  INFO 22904 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$8f692bca] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:03:06.741  INFO 22904 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2020-08-13 09:03:06.746  INFO 22904 --- [main] org.quartz.simpl.SimpleThreadPool        : Job execution threads will use class loader of thread: main
+2020-08-13 09:03:06.769  INFO 22904 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-08-13 09:03:06.769  INFO 22904 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.0 created.
+2020-08-13 09:03:06.771  INFO 22904 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2020-08-13 09:03:06.773  INFO 22904 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-08-13 09:03:06.773  INFO 22904 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'DefaultQuartzScheduler' initialized from an externally provided properties instance.
+2020-08-13 09:03:06.773  INFO 22904 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.0
+2020-08-13 09:03:06.774  INFO 22904 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: com.len.core.quartz.MyJobFactory@4e52d2f2
+2020-08-13 09:03:10.801  WARN 22904 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-08-13 09:03:10.801  INFO 22904 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-13 09:03:10.818  INFO 22904 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@18b45500
+2020-08-13 09:03:11.284  INFO 22904 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-13 09:03:11.901  INFO 22904 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-08-13 09:03:12.796  WARN 22904 --- [main] o.s.c.n.a.ArchaiusAutoConfiguration      : No spring.application.name found, defaulting to 'application'
+2020-08-13 09:03:12.798  WARN 22904 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-08-13 09:03:12.798  INFO 22904 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-13 09:03:14.384  WARN 22904 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2020-08-13 09:03:16.200  INFO 22904 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-08-13 09:03:16.401  INFO 22904 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-08-13 09:03:16.413 ERROR 22904 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.UnsupportedOperationException: MockServerContainer does not support addEndpoint(Class)
+	at org.springframework.test.context.web.socket.MockServerContainer.addEndpoint(MockServerContainer.java:127) ~[spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.web.socket.server.standard.ServerEndpointExporter.registerEndpoint(ServerEndpointExporter.java:156) ~[spring-websocket-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.web.socket.server.standard.ServerEndpointExporter.registerEndpoints(ServerEndpointExporter.java:134) ~[spring-websocket-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.web.socket.server.standard.ServerEndpointExporter.afterSingletonsInstantiated(ServerEndpointExporter.java:112) ~[spring-websocket-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:864) ~[spring-beans-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744) ~[spring-boot-2.1.12.RELEASE.jar:2.1.12.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391) ~[spring-boot-2.1.12.RELEASE.jar:2.1.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-2.1.12.RELEASE.jar:2.1.12.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) [spring-boot-test-2.1.12.RELEASE.jar:2.1.12.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) [spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) [spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) [spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) [spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) [spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) [spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) [junit-4.12.jar:4.12]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68) [junit-rt.jar:na]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33) [junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230) [junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58) [junit-rt.jar:na]
+
+2020-08-13 09:03:16.440  INFO 22904 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-08-13 09:03:16.444  INFO 22904 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application UNKNOWN with eureka with status DOWN
+2020-08-13 09:03:16.445  INFO 22904 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2020-08-13 09:03:16.456  INFO 22904 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2020-08-13 09:03:16.456  INFO 22904 --- [main] org.quartz.core.QuartzScheduler          : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+2020-08-13 09:03:16.456  INFO 22904 --- [main] org.quartz.core.QuartzScheduler          : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+2020-08-13 09:03:16.457  INFO 22904 --- [main] org.quartz.core.QuartzScheduler          : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-08-13 09:03:16.487 ERROR 22904 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@c0c2f8d] to prepare test instance [test.BootTest@e47637c]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125) ~[spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) ~[spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) ~[spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) [junit-4.12.jar:4.12]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68) [junit-rt.jar:na]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33) [junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230) [junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58) [junit-rt.jar:na]
+Caused by: java.lang.UnsupportedOperationException: MockServerContainer does not support addEndpoint(Class)
+	at org.springframework.test.context.web.socket.MockServerContainer.addEndpoint(MockServerContainer.java:127) ~[spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.web.socket.server.standard.ServerEndpointExporter.registerEndpoint(ServerEndpointExporter.java:156) ~[spring-websocket-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.web.socket.server.standard.ServerEndpointExporter.registerEndpoints(ServerEndpointExporter.java:134) ~[spring-websocket-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.web.socket.server.standard.ServerEndpointExporter.afterSingletonsInstantiated(ServerEndpointExporter.java:112) ~[spring-websocket-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:864) ~[spring-beans-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744) ~[spring-boot-2.1.12.RELEASE.jar:2.1.12.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391) ~[spring-boot-2.1.12.RELEASE.jar:2.1.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-2.1.12.RELEASE.jar:2.1.12.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) ~[spring-boot-test-2.1.12.RELEASE.jar:2.1.12.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.1.13.RELEASE.jar:5.1.13.RELEASE]
+	... 24 common frames omitted
+
+2020-08-13 09:09:56.409  INFO 35324 --- [main] test.BootTest                            : The following profiles are active: mysql-dev
+2020-08-13 09:09:59.202  INFO 35324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-08-13 09:09:59.210  INFO 35324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-08-13 09:09:59.324  INFO 35324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 87ms. Found 0 Redis repository interfaces.
+2020-08-13 09:09:59.532  WARN 35324 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-08-13 09:09:59.746  WARN 35324 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'sysUserMapper' and 'com.len.mapper.SysUserMapper' mapperInterface. Bean already defined with the same name!
+2020-08-13 09:10:00.261  INFO 35324 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=01f096fe-635d-31ce-8e9b-1138e3d85c3d
+2020-08-13 09:10:00.436  INFO 35324 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2020-08-13 09:10:00.456  INFO 35324 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2020-08-13 09:10:00.473  INFO 35324 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2020-08-13 09:10:00.502  INFO 35324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.len.config.ShiroConfig$$EnhancerBySpringCGLIB$$d696b47] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:10:00.570  INFO 35324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'transactionalConfig' of type [com.len.config.TransactionalConfig$$EnhancerBySpringCGLIB$$62ed2bdf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:10:00.727  INFO 35324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getRetryLimitCredentialsMatcher' of type [com.len.core.shiro.RetryLimitCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:10:00.848  INFO 35324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:10:00.895  INFO 35324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$d892b88f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:10:00.983  INFO 35324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataSource' of type [org.springframework.aop.scope.ScopedProxyFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:10:00.984  INFO 35324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource$$EnhancerBySpringCGLIB$$29042891] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:10:02.149  INFO 35324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:10:02.172  INFO 35324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:10:02.174  INFO 35324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysUserMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:10:02.179  INFO 35324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysUserMapper' of type [com.sun.proxy.$Proxy121] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:10:02.196  INFO 35324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysRoleUserMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:10:02.199  INFO 35324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysRoleUserMapper' of type [com.sun.proxy.$Proxy122] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:10:02.235  INFO 35324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysRoleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:10:02.237  INFO 35324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysRoleMapper' of type [com.sun.proxy.$Proxy123] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:10:02.273  INFO 35324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysRoleMenuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:10:02.276  INFO 35324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysRoleMenuMapper' of type [com.sun.proxy.$Proxy124] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:10:02.282  INFO 35324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'roleMenuServiceImpl' of type [com.len.service.impl.RoleMenuServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:10:02.307  INFO 35324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'roleUserServiceImpl' of type [com.len.service.impl.RoleUserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:10:02.307  INFO 35324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'roleServiceImpl' of type [com.len.service.impl.RoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:10:02.350  INFO 35324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysMenuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:10:02.353  INFO 35324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysMenuMapper' of type [com.sun.proxy.$Proxy125] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:10:02.378  INFO 35324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'menuServiceImpl' of type [com.len.service.impl.MenuServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:10:02.378  INFO 35324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysUserServiceImpl' of type [com.len.service.impl.SysUserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:10:02.379  INFO 35324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userLoginRealm' of type [com.len.core.shiro.LoginRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:10:03.801  INFO 35324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getAtLeastOneSuccessfulStrategy' of type [org.apache.shiro.authc.pam.AtLeastOneSuccessfulStrategy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:10:03.811  INFO 35324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getMyModularRealmAuthenticator' of type [com.len.config.MyModularRealmAuthenticator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:10:03.822  INFO 35324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisSessionDAO' of type [org.crazycake.shiro.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:10:03.849  INFO 35324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:10:03.880  INFO 35324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:10:03.915  INFO 35324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getPermissionFilter' of type [com.len.core.filter.PermissionFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:10:03.937  INFO 35324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getVerfityCodeFilter' of type [com.len.core.filter.VerfityCodeFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:10:04.144  INFO 35324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getAuthorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:10:04.372  INFO 35324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9aca4bf5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:10:04.925  INFO 35324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration$$EnhancerBySpringCGLIB$$5bc0724] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:10:04.991  INFO 35324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:10:05.124  INFO 35324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$b6e44ef2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:10:06.269  INFO 35324 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-08-13 09:10:06.325  INFO 35324 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-13 09:10:06.326  INFO 35324 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-08-13 09:10:06.904  INFO 35324 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-13 09:10:06.905  INFO 35324 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 10489 ms
+2020-08-13 09:10:07.924  WARN 35324 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-08-13 09:10:07.924  INFO 35324 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-13 09:10:07.944  INFO 35324 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@3487947c
+2020-08-13 09:10:14.481  INFO 35324 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2020-08-13 09:10:14.491  INFO 35324 --- [main] org.quartz.simpl.SimpleThreadPool        : Job execution threads will use class loader of thread: main
+2020-08-13 09:10:14.524  INFO 35324 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-08-13 09:10:14.525  INFO 35324 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.0 created.
+2020-08-13 09:10:14.526  INFO 35324 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2020-08-13 09:10:14.528  INFO 35324 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-08-13 09:10:14.528  INFO 35324 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'DefaultQuartzScheduler' initialized from an externally provided properties instance.
+2020-08-13 09:10:14.528  INFO 35324 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.0
+2020-08-13 09:10:14.529  INFO 35324 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: com.len.core.quartz.MyJobFactory@8de8b07
+2020-08-13 09:10:16.341  INFO 35324 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-13 09:10:16.971  INFO 35324 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-08-13 09:10:17.683  WARN 35324 --- [main] o.s.c.n.a.ArchaiusAutoConfiguration      : No spring.application.name found, defaulting to 'application'
+2020-08-13 09:10:17.685  WARN 35324 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-08-13 09:10:17.685  INFO 35324 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-13 09:10:19.636  WARN 35324 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2020-08-13 09:10:22.884  INFO 35324 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-08-13 09:10:23.312  INFO 35324 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-08-13 09:10:23.313  INFO 35324 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'application-1.errorChannel' has 1 subscriber(s).
+2020-08-13 09:10:23.314  INFO 35324 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started _org.springframework.integration.errorLogger
+2020-08-13 09:10:23.334  INFO 35324 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-08-13 09:10:23.390  INFO 35324 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-08-13 09:10:23.490  INFO 35324 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-08-13 09:10:23.788  INFO 35324 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: showUserUsingGET_1
+2020-08-13 09:10:23.805  WARN 35324 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.lang.String[]
+2020-08-13 09:10:23.808  INFO 35324 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingPOST_1
+2020-08-13 09:10:23.872  INFO 35324 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingPOST_2
+2020-08-13 09:10:23.877  INFO 35324 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: showMenuUsingGET_1
+2020-08-13 09:10:23.893  INFO 35324 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: mainUsingGET_1
+2020-08-13 09:10:23.915  WARN 35324 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.lang.String[]
+2020-08-13 09:10:23.941  INFO 35324 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingPOST_3
+2020-08-13 09:10:23.986  INFO 35324 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: showRoleListUsingGET_1
+2020-08-13 09:10:24.005  WARN 35324 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.lang.String[]
+2020-08-13 09:10:24.017  WARN 35324 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.lang.String[]
+2020-08-13 09:10:24.034  INFO 35324 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingPOST_4
+2020-08-13 09:10:24.141  INFO 35324 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: showUserUsingGET_2
+2020-08-13 09:10:24.182  INFO 35324 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: showUserUsingGET_3
+2020-08-13 09:10:24.187  INFO 35324 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: showUserUsingGET_4
+2020-08-13 09:10:24.191  WARN 35324 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.lang.String[]
+2020-08-13 09:10:24.194  INFO 35324 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUserUsingPOST_1
+2020-08-13 09:10:24.356  INFO 35324 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2020-08-13 09:10:24.359  INFO 35324 --- [main] org.quartz.core.QuartzScheduler          : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2020-08-13 09:10:24.785  INFO 35324 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 55836 (http) with context path ''
+2020-08-13 09:10:24.787  INFO 35324 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 55836
+2020-08-13 09:10:24.808  INFO 35324 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-08-13 09:10:24.952  INFO 35324 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-08-13 09:10:24.952  INFO 35324 --- [main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2020-08-13 09:10:24.964  INFO 35324 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1597281024960 with initial instances count: 0
+2020-08-13 09:10:24.996  INFO 35324 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application UNKNOWN with eureka with status UP
+2020-08-13 09:10:25.606  INFO 35324 --- [Thread-5] c.len.core.init.job.DataSourceJobThread  : ---------线程启动---------
+2020-08-13 09:10:25.875  INFO 35324 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : DatebookHikariCP - Starting...
+2020-08-13 09:10:26.373  INFO 35324 --- [Thread-5] com.zaxxer.hikari.pool.PoolBase          : DatebookHikariCP - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I)
+2020-08-13 09:10:26.398  INFO 35324 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : DatebookHikariCP - Start completed.
+2020-08-13 09:10:26.414 DEBUG 35324 --- [Thread-5] com.len.mapper.SysJobMapper.selectList   : ==>  Preparing: SELECT id,cron,job_name,update_date,create_by,clazz_path,update_by,job_desc,status,create_date FROM sys_job WHERE status=? 
+2020-08-13 09:10:26.456 DEBUG 35324 --- [Thread-5] com.len.mapper.SysJobMapper.selectList   : ==> Parameters: true(Boolean)
+2020-08-13 09:10:26.487 DEBUG 35324 --- [Thread-5] com.len.mapper.SysJobMapper.selectList   : <==      Total: 0
+2020-08-13 09:10:26.491  INFO 35324 --- [Thread-5] c.len.core.init.job.DataSourceJobThread  : ---数据库暂无启动的任务---------
+2020-08-13 09:10:26.550  INFO 35324 --- [main] test.BootTest                            : Started BootTest in 34.276 seconds (JVM running for 38.813)
+2020-08-13 09:10:27.394  INFO 35324 --- [main] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2020-08-13 09:10:27.399  INFO 35324 --- [main] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2020-08-13 09:10:39.370  INFO 35324 --- [Thread-8] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application UNKNOWN with eureka with status DOWN
+2020-08-13 09:10:39.375  INFO 35324 --- [Thread-8] org.quartz.core.QuartzScheduler          : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+2020-08-13 09:10:39.376  INFO 35324 --- [Thread-8] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-08-13 09:10:39.377  INFO 35324 --- [Thread-8] o.s.i.channel.PublishSubscribeChannel    : Channel 'application-1.errorChannel' has 0 subscriber(s).
+2020-08-13 09:10:39.377  INFO 35324 --- [Thread-8] o.s.i.endpoint.EventDrivenConsumer       : stopped _org.springframework.integration.errorLogger
+2020-08-13 09:10:39.378  INFO 35324 --- [Thread-8] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2020-08-13 09:10:39.386  INFO 35324 --- [Thread-8] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2020-08-13 09:10:39.386  INFO 35324 --- [Thread-8] org.quartz.core.QuartzScheduler          : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+2020-08-13 09:10:39.386  INFO 35324 --- [Thread-8] org.quartz.core.QuartzScheduler          : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+2020-08-13 09:10:39.387  INFO 35324 --- [Thread-8] org.quartz.core.QuartzScheduler          : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-08-13 09:10:39.622  INFO 35324 --- [Thread-8] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-08-13 09:10:39.622  INFO 35324 --- [Thread-8] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-08-13 09:10:39.623  INFO 35324 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : DatebookHikariCP - Shutdown initiated...
+2020-08-13 09:10:39.629  INFO 35324 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : DatebookHikariCP - Shutdown completed.
+2020-08-13 09:12:06.693  INFO 28220 --- [main] test.BootTest                            : The following profiles are active: mysql-dev
+2020-08-13 09:12:09.159  INFO 28220 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-08-13 09:12:09.163  INFO 28220 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-08-13 09:12:09.275  INFO 28220 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 89ms. Found 0 Redis repository interfaces.
+2020-08-13 09:12:09.483  WARN 28220 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-08-13 09:12:09.663  WARN 28220 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'sysUserMapper' and 'com.len.mapper.SysUserMapper' mapperInterface. Bean already defined with the same name!
+2020-08-13 09:12:10.102  INFO 28220 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=01f096fe-635d-31ce-8e9b-1138e3d85c3d
+2020-08-13 09:12:10.294  INFO 28220 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2020-08-13 09:12:10.353  INFO 28220 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2020-08-13 09:12:10.389  INFO 28220 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2020-08-13 09:12:10.438  INFO 28220 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.len.config.ShiroConfig$$EnhancerBySpringCGLIB$$b074f43d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:12:10.626  INFO 28220 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'transactionalConfig' of type [com.len.config.TransactionalConfig$$EnhancerBySpringCGLIB$$5f8b4d5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:12:10.824  INFO 28220 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getRetryLimitCredentialsMatcher' of type [com.len.core.shiro.RetryLimitCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:12:11.032  INFO 28220 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:12:11.076  INFO 28220 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$7b9e4185] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:12:11.150  INFO 28220 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataSource' of type [org.springframework.aop.scope.ScopedProxyFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:12:11.150  INFO 28220 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource$$EnhancerBySpringCGLIB$$85fc088f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:12:11.918  INFO 28220 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:12:11.944  INFO 28220 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:12:11.945  INFO 28220 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysUserMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:12:11.949  INFO 28220 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysUserMapper' of type [com.sun.proxy.$Proxy121] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:12:11.968  INFO 28220 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysRoleUserMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:12:11.970  INFO 28220 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysRoleUserMapper' of type [com.sun.proxy.$Proxy122] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:12:12.006  INFO 28220 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysRoleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:12:12.009  INFO 28220 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysRoleMapper' of type [com.sun.proxy.$Proxy123] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:12:12.051  INFO 28220 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysRoleMenuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:12:12.055  INFO 28220 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysRoleMenuMapper' of type [com.sun.proxy.$Proxy124] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:12:12.059  INFO 28220 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'roleMenuServiceImpl' of type [com.len.service.impl.RoleMenuServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:12:12.088  INFO 28220 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'roleUserServiceImpl' of type [com.len.service.impl.RoleUserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:12:12.089  INFO 28220 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'roleServiceImpl' of type [com.len.service.impl.RoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:12:12.139  INFO 28220 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysMenuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:12:12.143  INFO 28220 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysMenuMapper' of type [com.sun.proxy.$Proxy125] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:12:12.158  INFO 28220 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'menuServiceImpl' of type [com.len.service.impl.MenuServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:12:12.158  INFO 28220 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysUserServiceImpl' of type [com.len.service.impl.SysUserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:12:12.159  INFO 28220 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userLoginRealm' of type [com.len.core.shiro.LoginRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:12:13.655  INFO 28220 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getAtLeastOneSuccessfulStrategy' of type [org.apache.shiro.authc.pam.AtLeastOneSuccessfulStrategy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:12:13.663  INFO 28220 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getMyModularRealmAuthenticator' of type [com.len.config.MyModularRealmAuthenticator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:12:13.675  INFO 28220 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisSessionDAO' of type [org.crazycake.shiro.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:12:13.714  INFO 28220 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:12:13.742  INFO 28220 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:12:13.776  INFO 28220 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getPermissionFilter' of type [com.len.core.filter.PermissionFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:12:13.793  INFO 28220 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getVerfityCodeFilter' of type [com.len.core.filter.VerfityCodeFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:12:13.901  INFO 28220 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getAuthorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:12:14.017  INFO 28220 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3dd5d4eb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:12:14.378  INFO 28220 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration$$EnhancerBySpringCGLIB$$a8c7901a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:12:14.439  INFO 28220 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:12:14.535  INFO 28220 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$59efd7e8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:12:15.369  INFO 28220 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-08-13 09:12:15.422  INFO 28220 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-13 09:12:15.422  INFO 28220 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-08-13 09:12:16.053  INFO 28220 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-13 09:12:16.053  INFO 28220 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 9354 ms
+2020-08-13 09:12:16.775  WARN 28220 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-08-13 09:12:16.775  INFO 28220 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-13 09:12:16.795  INFO 28220 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@234bfc8c
+2020-08-13 09:12:22.988  INFO 28220 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2020-08-13 09:12:22.995  INFO 28220 --- [main] org.quartz.simpl.SimpleThreadPool        : Job execution threads will use class loader of thread: main
+2020-08-13 09:12:23.022  INFO 28220 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-08-13 09:12:23.022  INFO 28220 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.0 created.
+2020-08-13 09:12:23.024  INFO 28220 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2020-08-13 09:12:23.026  INFO 28220 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-08-13 09:12:23.026  INFO 28220 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'DefaultQuartzScheduler' initialized from an externally provided properties instance.
+2020-08-13 09:12:23.026  INFO 28220 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.0
+2020-08-13 09:12:23.027  INFO 28220 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: com.len.core.quartz.MyJobFactory@7789526e
+2020-08-13 09:12:24.957  INFO 28220 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-13 09:12:25.591  INFO 28220 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-08-13 09:12:26.263  WARN 28220 --- [main] o.s.c.n.a.ArchaiusAutoConfiguration      : No spring.application.name found, defaulting to 'application'
+2020-08-13 09:12:26.265  WARN 28220 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-08-13 09:12:26.265  INFO 28220 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-13 09:12:28.193  WARN 28220 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2020-08-13 09:12:30.833  INFO 28220 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-08-13 09:12:31.109  INFO 28220 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-08-13 09:12:31.110  INFO 28220 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'application-1.errorChannel' has 1 subscriber(s).
+2020-08-13 09:12:31.111  INFO 28220 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started _org.springframework.integration.errorLogger
+2020-08-13 09:12:31.129  INFO 28220 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-08-13 09:12:31.178  INFO 28220 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-08-13 09:12:31.273  INFO 28220 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-08-13 09:12:31.542  INFO 28220 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: showUserUsingGET_1
+2020-08-13 09:12:31.557  WARN 28220 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.lang.String[]
+2020-08-13 09:12:31.559  INFO 28220 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingPOST_1
+2020-08-13 09:12:31.620  INFO 28220 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingPOST_2
+2020-08-13 09:12:31.623  INFO 28220 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: showMenuUsingGET_1
+2020-08-13 09:12:31.634  INFO 28220 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: mainUsingGET_1
+2020-08-13 09:12:31.643  WARN 28220 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.lang.String[]
+2020-08-13 09:12:31.649  INFO 28220 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingPOST_3
+2020-08-13 09:12:31.670  INFO 28220 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: showRoleListUsingGET_1
+2020-08-13 09:12:31.678  WARN 28220 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.lang.String[]
+2020-08-13 09:12:31.686  WARN 28220 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.lang.String[]
+2020-08-13 09:12:31.700  INFO 28220 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingPOST_4
+2020-08-13 09:12:31.725  INFO 28220 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: showUserUsingGET_2
+2020-08-13 09:12:31.730  INFO 28220 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: showUserUsingGET_3
+2020-08-13 09:12:31.732  INFO 28220 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: showUserUsingGET_4
+2020-08-13 09:12:31.734  WARN 28220 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.lang.String[]
+2020-08-13 09:12:31.737  INFO 28220 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUserUsingPOST_1
+2020-08-13 09:12:31.758  INFO 28220 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2020-08-13 09:12:31.758  INFO 28220 --- [main] org.quartz.core.QuartzScheduler          : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2020-08-13 09:12:31.885  INFO 28220 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 55963 (http) with context path ''
+2020-08-13 09:12:31.886  INFO 28220 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 55963
+2020-08-13 09:12:31.899  INFO 28220 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-08-13 09:12:32.021  INFO 28220 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-08-13 09:12:32.022  INFO 28220 --- [main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2020-08-13 09:12:32.042  INFO 28220 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1597281152030 with initial instances count: 0
+2020-08-13 09:12:32.081  INFO 28220 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application UNKNOWN with eureka with status UP
+2020-08-13 09:12:32.821  INFO 28220 --- [Thread-5] c.len.core.init.job.DataSourceJobThread  : ---------线程启动---------
+2020-08-13 09:12:33.139  INFO 28220 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : DatebookHikariCP - Starting...
+2020-08-13 09:12:33.763  INFO 28220 --- [main] test.BootTest                            : Started BootTest in 31.153 seconds (JVM running for 35.253)
+2020-08-13 09:12:33.889  INFO 28220 --- [Thread-5] com.zaxxer.hikari.pool.PoolBase          : DatebookHikariCP - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I)
+2020-08-13 09:12:33.909  INFO 28220 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : DatebookHikariCP - Start completed.
+2020-08-13 09:12:33.925 DEBUG 28220 --- [Thread-5] com.len.mapper.SysJobMapper.selectList   : ==>  Preparing: SELECT id,cron,job_name,update_date,create_by,clazz_path,update_by,job_desc,status,create_date FROM sys_job WHERE status=? 
+2020-08-13 09:12:33.969 DEBUG 28220 --- [Thread-5] com.len.mapper.SysJobMapper.selectList   : ==> Parameters: true(Boolean)
+2020-08-13 09:12:33.998 DEBUG 28220 --- [Thread-5] com.len.mapper.SysJobMapper.selectList   : <==      Total: 0
+2020-08-13 09:12:34.002  INFO 28220 --- [Thread-5] c.len.core.init.job.DataSourceJobThread  : ---数据库暂无启动的任务---------
+2020-08-13 09:13:11.018  INFO 28220 --- [main] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2020-08-13 09:13:11.033  INFO 28220 --- [main] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2020-08-13 09:14:19.689  INFO 28220 --- [Thread-8] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application UNKNOWN with eureka with status DOWN
+2020-08-13 09:14:19.694  INFO 28220 --- [Thread-8] org.quartz.core.QuartzScheduler          : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+2020-08-13 09:14:19.695  INFO 28220 --- [Thread-8] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-08-13 09:14:19.695  INFO 28220 --- [Thread-8] o.s.i.channel.PublishSubscribeChannel    : Channel 'application-1.errorChannel' has 0 subscriber(s).
+2020-08-13 09:14:19.695  INFO 28220 --- [Thread-8] o.s.i.endpoint.EventDrivenConsumer       : stopped _org.springframework.integration.errorLogger
+2020-08-13 09:14:19.696  INFO 28220 --- [Thread-8] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2020-08-13 09:14:19.704  INFO 28220 --- [Thread-8] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2020-08-13 09:14:19.704  INFO 28220 --- [Thread-8] org.quartz.core.QuartzScheduler          : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+2020-08-13 09:14:19.704  INFO 28220 --- [Thread-8] org.quartz.core.QuartzScheduler          : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+2020-08-13 09:14:19.705  INFO 28220 --- [Thread-8] org.quartz.core.QuartzScheduler          : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-08-13 09:14:19.836  INFO 28220 --- [Thread-8] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-08-13 09:14:19.836  INFO 28220 --- [Thread-8] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-08-13 09:14:19.836  INFO 28220 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : DatebookHikariCP - Shutdown initiated...
+2020-08-13 09:14:19.842  INFO 28220 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : DatebookHikariCP - Shutdown completed.
+2020-08-13 09:17:07.651  INFO 34228 --- [main] test.BootTest                            : The following profiles are active: mysql-dev
+2020-08-13 09:17:10.030  INFO 34228 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-08-13 09:17:10.038  INFO 34228 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-08-13 09:17:10.245  INFO 34228 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 176ms. Found 0 Redis repository interfaces.
+2020-08-13 09:17:10.446  WARN 34228 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-08-13 09:17:10.617  WARN 34228 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'sysUserMapper' and 'com.len.mapper.SysUserMapper' mapperInterface. Bean already defined with the same name!
+2020-08-13 09:17:11.011  INFO 34228 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=01f096fe-635d-31ce-8e9b-1138e3d85c3d
+2020-08-13 09:17:11.174  INFO 34228 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2020-08-13 09:17:11.191  INFO 34228 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2020-08-13 09:17:11.210  INFO 34228 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2020-08-13 09:17:11.239  INFO 34228 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.len.config.ShiroConfig$$EnhancerBySpringCGLIB$$fce7d5eb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:17:11.318  INFO 34228 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'transactionalConfig' of type [com.len.config.TransactionalConfig$$EnhancerBySpringCGLIB$$526b9683] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:17:11.468  INFO 34228 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getRetryLimitCredentialsMatcher' of type [com.len.core.shiro.RetryLimitCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:17:11.614  INFO 34228 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:17:11.665  INFO 34228 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$c8112333] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:17:11.763  INFO 34228 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataSource' of type [org.springframework.aop.scope.ScopedProxyFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:17:11.764  INFO 34228 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource$$EnhancerBySpringCGLIB$$a4a93e19] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:17:12.695  INFO 34228 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:17:12.732  INFO 34228 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:17:12.734  INFO 34228 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysUserMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:17:12.739  INFO 34228 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysUserMapper' of type [com.sun.proxy.$Proxy121] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:17:12.762  INFO 34228 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysRoleUserMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:17:12.765  INFO 34228 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysRoleUserMapper' of type [com.sun.proxy.$Proxy122] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:17:12.812  INFO 34228 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysRoleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:17:12.815  INFO 34228 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysRoleMapper' of type [com.sun.proxy.$Proxy123] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:17:12.866  INFO 34228 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysRoleMenuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:17:12.870  INFO 34228 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysRoleMenuMapper' of type [com.sun.proxy.$Proxy124] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:17:12.876  INFO 34228 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'roleMenuServiceImpl' of type [com.len.service.impl.RoleMenuServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:17:12.913  INFO 34228 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'roleUserServiceImpl' of type [com.len.service.impl.RoleUserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:17:12.914  INFO 34228 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'roleServiceImpl' of type [com.len.service.impl.RoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:17:13.035  INFO 34228 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysMenuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:17:13.046  INFO 34228 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysMenuMapper' of type [com.sun.proxy.$Proxy125] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:17:13.061  INFO 34228 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'menuServiceImpl' of type [com.len.service.impl.MenuServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:17:13.062  INFO 34228 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sysUserServiceImpl' of type [com.len.service.impl.SysUserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:17:13.062  INFO 34228 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userLoginRealm' of type [com.len.core.shiro.LoginRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:17:14.456  INFO 34228 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getAtLeastOneSuccessfulStrategy' of type [org.apache.shiro.authc.pam.AtLeastOneSuccessfulStrategy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:17:14.465  INFO 34228 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getMyModularRealmAuthenticator' of type [com.len.config.MyModularRealmAuthenticator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:17:14.475  INFO 34228 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisSessionDAO' of type [org.crazycake.shiro.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:17:14.492  INFO 34228 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:17:14.520  INFO 34228 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:17:14.548  INFO 34228 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getPermissionFilter' of type [com.len.core.filter.PermissionFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:17:14.567  INFO 34228 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getVerfityCodeFilter' of type [com.len.core.filter.VerfityCodeFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:17:14.670  INFO 34228 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getAuthorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:17:14.787  INFO 34228 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8a48b699] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:17:15.115  INFO 34228 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration$$EnhancerBySpringCGLIB$$f53a71c8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:17:15.179  INFO 34228 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:17:15.274  INFO 34228 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a662b996] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 09:17:16.329  INFO 34228 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-08-13 09:17:16.374  INFO 34228 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-13 09:17:16.374  INFO 34228 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-08-13 09:17:16.873  INFO 34228 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-13 09:17:16.874  INFO 34228 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 9218 ms
+2020-08-13 09:17:17.458  WARN 34228 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-08-13 09:17:17.459  INFO 34228 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-13 09:17:17.474  INFO 34228 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@71b7e9c8
+2020-08-13 09:17:23.689  INFO 34228 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2020-08-13 09:17:23.694  INFO 34228 --- [main] org.quartz.simpl.SimpleThreadPool        : Job execution threads will use class loader of thread: main
+2020-08-13 09:17:23.714  INFO 34228 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-08-13 09:17:23.714  INFO 34228 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.0 created.
+2020-08-13 09:17:23.715  INFO 34228 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2020-08-13 09:17:23.717  INFO 34228 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-08-13 09:17:23.717  INFO 34228 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'DefaultQuartzScheduler' initialized from an externally provided properties instance.
+2020-08-13 09:17:23.717  INFO 34228 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.0
+2020-08-13 09:17:23.718  INFO 34228 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: com.len.core.quartz.MyJobFactory@7b55fc83
+2020-08-13 09:17:25.362  INFO 34228 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-13 09:17:25.918  INFO 34228 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-08-13 09:17:26.554  WARN 34228 --- [main] o.s.c.n.a.ArchaiusAutoConfiguration      : No spring.application.name found, defaulting to 'application'
+2020-08-13 09:17:26.555  WARN 34228 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-08-13 09:17:26.556  INFO 34228 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-13 09:17:28.351  WARN 34228 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2020-08-13 09:17:30.683  INFO 34228 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-08-13 09:17:30.956  INFO 34228 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-08-13 09:17:30.956  INFO 34228 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'application-1.errorChannel' has 1 subscriber(s).
+2020-08-13 09:17:30.957  INFO 34228 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started _org.springframework.integration.errorLogger
+2020-08-13 09:17:30.977  INFO 34228 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-08-13 09:17:31.023  INFO 34228 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-08-13 09:17:31.105  INFO 34228 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-08-13 09:17:31.373  INFO 34228 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: showUserUsingGET_1
+2020-08-13 09:17:31.395  WARN 34228 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.lang.String[]
+2020-08-13 09:17:31.398  INFO 34228 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingPOST_1
+2020-08-13 09:17:31.457  INFO 34228 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingPOST_2
+2020-08-13 09:17:31.461  INFO 34228 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: showMenuUsingGET_1
+2020-08-13 09:17:31.472  INFO 34228 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: mainUsingGET_1
+2020-08-13 09:17:31.482  WARN 34228 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.lang.String[]
+2020-08-13 09:17:31.487  INFO 34228 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingPOST_3
+2020-08-13 09:17:31.508  INFO 34228 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: showRoleListUsingGET_1
+2020-08-13 09:17:31.514  WARN 34228 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.lang.String[]
+2020-08-13 09:17:31.522  WARN 34228 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.lang.String[]
+2020-08-13 09:17:31.532  INFO 34228 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingPOST_4
+2020-08-13 09:17:31.561  INFO 34228 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: showUserUsingGET_2
+2020-08-13 09:17:31.567  INFO 34228 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: showUserUsingGET_3
+2020-08-13 09:17:31.571  INFO 34228 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: showUserUsingGET_4
+2020-08-13 09:17:31.575  WARN 34228 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.lang.String[]
+2020-08-13 09:17:31.577  INFO 34228 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUserUsingPOST_1
+2020-08-13 09:17:31.608  INFO 34228 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2020-08-13 09:17:31.609  INFO 34228 --- [main] org.quartz.core.QuartzScheduler          : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2020-08-13 09:17:31.835  INFO 34228 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 56173 (http) with context path ''
+2020-08-13 09:17:31.837  INFO 34228 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 56173
+2020-08-13 09:17:31.850  INFO 34228 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-08-13 09:17:31.927  INFO 34228 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-08-13 09:17:31.927  INFO 34228 --- [main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2020-08-13 09:17:31.934  INFO 34228 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1597281451931 with initial instances count: 0
+2020-08-13 09:17:31.958  INFO 34228 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application UNKNOWN with eureka with status UP
+2020-08-13 09:17:32.692  INFO 34228 --- [Thread-5] c.len.core.init.job.DataSourceJobThread  : ---------线程启动---------
+2020-08-13 09:17:32.926  INFO 34228 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : DatebookHikariCP - Starting...
+2020-08-13 09:17:33.094  INFO 34228 --- [main] test.BootTest                            : Started BootTest in 29.263 seconds (JVM running for 34.543)
+2020-08-13 09:17:33.262  INFO 34228 --- [Thread-5] com.zaxxer.hikari.pool.PoolBase          : DatebookHikariCP - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I)
+2020-08-13 09:17:33.278  INFO 34228 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : DatebookHikariCP - Start completed.
+2020-08-13 09:17:33.289 DEBUG 34228 --- [Thread-5] com.len.mapper.SysJobMapper.selectList   : ==>  Preparing: SELECT id,cron,job_name,update_date,create_by,clazz_path,update_by,job_desc,status,create_date FROM sys_job WHERE status=? 
+2020-08-13 09:17:33.315 DEBUG 34228 --- [Thread-5] com.len.mapper.SysJobMapper.selectList   : ==> Parameters: true(Boolean)
+2020-08-13 09:17:33.342 DEBUG 34228 --- [Thread-5] com.len.mapper.SysJobMapper.selectList   : <==      Total: 0
+2020-08-13 09:17:33.346  INFO 34228 --- [Thread-5] c.len.core.init.job.DataSourceJobThread  : ---数据库暂无启动的任务---------
+2020-08-13 09:17:33.531  INFO 34228 --- [main] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2020-08-13 09:17:33.533  INFO 34228 --- [main] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2020-08-13 09:17:48.422  INFO 34228 --- [Thread-8] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application UNKNOWN with eureka with status DOWN
+2020-08-13 09:17:48.426  INFO 34228 --- [Thread-8] org.quartz.core.QuartzScheduler          : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+2020-08-13 09:17:48.427  INFO 34228 --- [Thread-8] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-08-13 09:17:48.428  INFO 34228 --- [Thread-8] o.s.i.channel.PublishSubscribeChannel    : Channel 'application-1.errorChannel' has 0 subscriber(s).
+2020-08-13 09:17:48.428  INFO 34228 --- [Thread-8] o.s.i.endpoint.EventDrivenConsumer       : stopped _org.springframework.integration.errorLogger
+2020-08-13 09:17:48.429  INFO 34228 --- [Thread-8] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2020-08-13 09:17:48.435  INFO 34228 --- [Thread-8] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2020-08-13 09:17:48.435  INFO 34228 --- [Thread-8] org.quartz.core.QuartzScheduler          : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+2020-08-13 09:17:48.436  INFO 34228 --- [Thread-8] org.quartz.core.QuartzScheduler          : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+2020-08-13 09:17:48.436  INFO 34228 --- [Thread-8] org.quartz.core.QuartzScheduler          : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-08-13 09:17:48.568  INFO 34228 --- [Thread-8] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-08-13 09:17:48.568  INFO 34228 --- [Thread-8] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-08-13 09:17:48.568  INFO 34228 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : DatebookHikariCP - Shutdown initiated...
+2020-08-13 09:17:48.573  INFO 34228 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : DatebookHikariCP - Shutdown completed.
