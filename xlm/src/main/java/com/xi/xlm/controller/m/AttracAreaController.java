@@ -29,7 +29,7 @@ public class AttracAreaController {
     @GetMapping(value = "showAttracAreaList")
     @ResponseBody
 //    @RequiresPermissions("attract:showAttracAreaShow")
-    public Result areaShow(@RequestParam(defaultValue = "0") Long page, @RequestParam(defaultValue = "20")Long limit,@RequestParam(defaultValue = "1")String type) {
+    public Result areaShow(@RequestParam(defaultValue = "0") Long page, @RequestParam(defaultValue = "20")Long limit,@RequestParam(defaultValue = "0")String type) {
         Page<AttracArea> pages = new Page<>();
         pages.setSize(limit);
         pages.setCurrent(page);

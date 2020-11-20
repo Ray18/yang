@@ -86,7 +86,7 @@
                     layer.close(index);
                 });
             } else if (obj.event === 'edit') {
-                update('编辑案例', 'qj/citycase/updateCityCase?id=' + data.id, 700, 450);
+                update('编辑地址', '/m/attracArea/showUpdateArea?id=' + data.id, 700, 450);
             }
         });
     });
