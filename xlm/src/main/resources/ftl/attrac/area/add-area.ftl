@@ -13,59 +13,39 @@
 <div class="x-body">
     <form class="layui-form layui-form-pane" style="margin-left: 20px;">
         <div style="width:100%;height:400px;overflow: auto;">
-            <div class="layui-form-item">
+<#--            <div class="layui-form-item">
                 <fieldset class="layui-elem-field layui-field-title" style="margin-top: 10px;">
-                    <legend style="font-size:16px;">图片上传</legend>
+                    <legend style="font-size:16px;">基础信息</legend>
                 </fieldset>
-                <div class="layui-input-inline">
-                    <div class="layui-upload-drag" style="margin-left:10%;" id="test10">
-                        <i style="font-size:30px;" class="layui-icon"></i>
-                        <p style="font-size: 10px">点击上传，或将文件拖拽到此处</p>
+            </div>-->
+            <div style="margin-left:25%">
+                <div class="layui-form-item">
+                    <label for="parentArea" class="layui-form-label">
+                        <span class="x-red">*</span>父级
+                    </label>
+                    <div class="layui-input-block" style="width:190px;">
+                        <select name="parentArea" id="parentArea" lay-verify="parentArea" lay-filter="parentArea">
+                            <option value="0">全国</option>
+                            <#list parentAreas as parentArea>
+                                <option value="${parentArea.id}">${parentArea.name}</option>
+                            </#list>
+                        </select>
                     </div>
                 </div>
-                <div class="layui-input-inline">
-                    <div id="demo2" style="margin-top: 20px;margin-left: 50px">
-                        <img src="${re.contextPath}/plugin/x-admin/images/bg.png" width="100px" height="100px"
-                             class="layui-upload-img layui-circle">
+                <div class="layui-form-item">
+                    <label for="name" class="layui-form-label">
+                        <span class="x-red">*</span>名称
+                    </label>
+                    <div class="layui-input-inline">
+                        <input type="text" id="name" name="name" lay-verify="name"
+                               autocomplete="off" class="layui-input">
+                    </div>
+                    <div id="ms" class="layui-form-mid layui-word-aux">
+                        <span class="x-red">*</span><span id="ums">必须填写</span>
                     </div>
                 </div>
             </div>
-
-            <div class="layui-form-item">
-                <fieldset class="layui-elem-field layui-field-title" style="margin-top: 10px;">
-                    <legend style="font-size:16px;">标题</legend>
-                </fieldset>
-                <label for="title" class="layui-form-label">
-                    <span class="x-red">*</span>标题
-                </label>
-                <div class="layui-input-inline">
-                    <input type="text" id="title" name="title" lay-verify="title"
-                           autocomplete="off" class="layui-input">
-                </div>
-            </div>
-
-            <div class="layui-form-item">
-                <fieldset class="layui-elem-field layui-field-title" style="margin-top: 10px;">
-                    <legend style="font-size:16px;">图文详情</legend>
-                </fieldset>
-                <textarea id="demo" name="caseDetails" lay-verify="caseDetails">
-                </textarea>
-                <input type="hidden" id="headImg" value="" name="headImg" lay-verify="headImg"/>
-
-            </div>
         </div>
-        <div style="width: 100%;height: 55px;background-color: white;border-top:1px solid #e6e6e6;
-  position: fixed;bottom: 1px;margin-left:-20px;">
-            <div class="layui-form-item" style=" float: right;margin-right: 30px;margin-top: 8px">
-                <button class="layui-btn layui-btn-normal" lay-filter="add" lay-submit="">
-                    确认
-                </button>
-                <button class="layui-btn layui-btn-primary" id="close">
-                    取消
-                </button>
-            </div>
-        </div>
-
     </form>
 </div>
 

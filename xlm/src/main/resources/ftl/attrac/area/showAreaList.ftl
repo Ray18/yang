@@ -13,7 +13,7 @@
     <div class="showFilter clearfix">
         <div class="iptInline">
             <div class="iptCon">
-                <input type="text" class="layui-input" id="inputValue" placeholder="请输入父节点id" style="width:200px;">
+                <input type="text" class="allIpt" id="inputValue" placeholder="请输入父节点id" style="width:200px;">
                 <a class="layui-btn layui-btn-sm" id="solr" ">查询</a>
                 <@shiro.hasPermission name="attract:showAddCityCase">
                     <a class="layui-btn layui-btn-normal layui-btn-sm" id="add" "><i class="layui-icon">&#xe608;</i>新增</a>
@@ -155,7 +155,13 @@
             shadeClose: false,
             shade: 0.4,
             title: title,
-            content: url
+            content: url,
+            btn: ['确定', '取消'],
+            btnAlign: 'c',
+            yes: function(index, layero){
+                //按钮【按钮一】的回调
+
+            }
         });
     }
 

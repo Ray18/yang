@@ -27,12 +27,18 @@ public class AttracAreaServiceImpl extends ServiceImpl<AttracAreaMapper, AttracA
     public IPage<AttracArea> list(Page<AttracArea> pages,String type) {
         LambdaQueryWrapper<AttracArea> attracAreaLambdaQueryWrapper = new LambdaQueryWrapper<>();
         attracAreaLambdaQueryWrapper.eq(AttracArea::getInvalid,0);
-       if(type.equals("0")){
-           attracAreaLambdaQueryWrapper.eq(AttracArea::getParent,0);
-       }else{
-           attracAreaLambdaQueryWrapper.eq(AttracArea::getParent,type);
-       }
+        if(type.equals("1")){
+            attracAreaLambdaQueryWrapper.eq(AttracArea::getParent,0);
+        }else{
+            attracAreaLambdaQueryWrapper.eq(AttracArea::getParent,type);
+        }
         return baseMapper.selectPage(pages, attracAreaLambdaQueryWrapper);
+    }
+
+    @Override
+    public List<AttracArea> areaByParentId(String parentId) {
+        List<AttracArea> attracAreas = aam.selectList(new LambdaQueryWrapper<AttracArea>().eq(AttracArea::getParent, parentId));
+        return attracAreas;
     }
 
     @Override

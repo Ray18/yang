@@ -2,9 +2,10 @@ package com.xi.xlm.service;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.xi.xlm.entity.AttracArea;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.xi.xlm.entity.AttractDealerInfo;
+import com.xi.xlm.entity.AttracArea;
+
+import java.util.List;
 
 /**
  * <p>
@@ -17,6 +18,8 @@ import com.xi.xlm.entity.AttractDealerInfo;
 public interface IAttracAreaService extends IService<AttracArea> {
 
     IPage<AttracArea> list(Page<AttracArea> pages,String type);
+
+    List<AttracArea> areaByParentId(String parentId);
 
     Integer addArea(AttracArea attracArea);
 
