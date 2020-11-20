@@ -27,7 +27,7 @@ public class AttracAreaServiceImpl extends ServiceImpl<AttracAreaMapper, AttracA
     public IPage<AttracArea> list(Page<AttracArea> pages,String type) {
         LambdaQueryWrapper<AttracArea> attracAreaLambdaQueryWrapper = new LambdaQueryWrapper<>();
         attracAreaLambdaQueryWrapper.eq(AttracArea::getInvalid,0);
-       if(type.equals("1")){
+       if(type.equals("0")){
            attracAreaLambdaQueryWrapper.eq(AttracArea::getParent,0);
        }else{
            attracAreaLambdaQueryWrapper.eq(AttracArea::getParent,type);

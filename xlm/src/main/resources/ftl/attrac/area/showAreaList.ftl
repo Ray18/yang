@@ -13,12 +13,10 @@
     <div class="showFilter clearfix">
         <div class="iptInline">
             <div class="iptCon">
-                <input type="text" class="allIpt" id="inputValue" placeholder="请输入父节点id" style="width:200px;">
+                <input type="text" class="layui-input" id="inputValue" placeholder="请输入父节点id" style="width:200px;">
                 <a class="layui-btn layui-btn-sm" id="solr" ">查询</a>
                 <@shiro.hasPermission name="attract:showAddCityCase">
-                    <button class="layui-btn layui-btn-normal  layui-btn-sm" data-type="add">
-                        <i class="layui-icon">&#xe608;</i>新增
-                    </button>
+                    <a class="layui-btn layui-btn-normal layui-btn-sm" id="add" "><i class="layui-icon">&#xe608;</i>新增</a>
                 </@shiro.hasPermission>
             </div>
         </div>
@@ -44,8 +42,8 @@
         }
     }
     var tableIns;
-    layui.use('table', function () {
-        table = layui.table;
+    layui.use(['table'], function () {
+        var table = layui.table;
         //方法级渲染
         tableIns=table.render({
             id: 'citycaseList',
@@ -75,24 +73,8 @@
             ]]
             , page: true,
             height: 'full-100'
-
-
         });
-        $('#solr').on('click', function(){
-               var type = $(this).data('type');
-               active[type] ? active[type].call(this) : '';
-           });
-        var $ = layui.$, active = {
 
-            add: function () {
-                add('添加地址', '/m/attracArea/showAddArea', 700, 450);
-            }
-        };
-
-        //监听表格复选框选择
-        table.on('checkbox(citycase)', function (obj) {
-            console.log(obj)
-        });
         //监听工具条
         table.on('tool(citycase)', function (obj) {
             var data = obj.data;
@@ -106,30 +88,14 @@
             } else if (obj.event === 'edit') {
                 update('编辑案例', 'qj/citycase/updateCityCase?id=' + data.id, 700, 450);
             }
-
-             //搜索
-                var $ = layui.$, active = {
-                    reload: function(){
-                        //执行重载
-                        table.reload('citycaseList', {
-                            page: {
-                                curr: 1 //重新从第 1 页开始
-                            }
-                            ,where: {
-                                type: $('#inputValue').val()//关键字
-                            }
-                        });
-                    }
-                };
         });
-
-        $('.len-form-item .layui-btn,.layui-col-md12 .layui-btn').on('click', function () {
-            var type = $(this).data('type');
-            active[type] ? active[type].call(this) : '';
-        });
-
     });
-
+    $('#solr').on('click', function(){
+        reloadTable();
+    });
+    $('#add').on('click', function(){
+        add('添加地址', '/m/attracArea/showAddArea', 700, 450);
+    });
 
     function update(title, url, w, h) {
         if (title == null || title == '') {
@@ -213,6 +179,29 @@
         });
     }
 
+
+    function reloadTable() {
+        //这里以搜索为例
+        tableIns.reload({
+            where: {
+                type: $('#inputValue').val()//关键字
+            }
+            ,page: {
+                curr: 1 //重新从第 1 页开始
+            }
+        });
+        //上述方法等价于
+        /*table.reload('idTest', {
+            where: { //设定异步数据接口的额外参数，任意设
+                aaaaaa: 'xxx'
+                ,bbb: 'yyy'
+                //…
+            }
+            ,page: {
+                curr: 1 //重新从第 1 页开始
+            }
+        }); //只重载数据*/
+    }
 </script>
 </body>
 </html>
