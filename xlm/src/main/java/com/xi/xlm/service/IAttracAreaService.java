@@ -17,7 +17,7 @@ import java.util.List;
  */
 public interface IAttracAreaService extends IService<AttracArea> {
 
-    IPage<AttracArea> list(Page<AttracArea> pages,String type);
+    IPage<AttracArea> list(Page<AttracArea> pages, String parent);
 
     List<AttracArea> areaByParentId(String parentId);
 

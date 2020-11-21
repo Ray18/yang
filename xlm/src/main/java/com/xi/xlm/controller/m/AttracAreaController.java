@@ -29,22 +29,22 @@ public class AttracAreaController {
     @GetMapping(value = "showAttracAreaList")
     @ResponseBody
 //    @RequiresPermissions("attract:showAttracAreaShow")
-    public Result areaShow(@RequestParam(defaultValue = "0") Long page, @RequestParam(defaultValue = "20")Long limit,@RequestParam(defaultValue = "0")String type) {
+    public Result areaShow(@RequestParam(defaultValue = "0") Long page, @RequestParam(defaultValue = "20")Long limit,@RequestParam(defaultValue = "")String parent) {
         Page<AttracArea> pages = new Page<>();
         pages.setSize(limit);
         pages.setCurrent(page);
-        IPage<AttracArea> list = attracAreaService.list(pages,type);
+        IPage<AttracArea> list = attracAreaService.list(pages,parent);
         return Result.ok(list);
     }
 
 
-//    @RequiresPermissions("attract:showAreaList")
+    //    @RequiresPermissions("attract:showAreaList")
     @GetMapping(value = "showAreaList")
     public String showAreaList(Model model) {
         return "/attrac/area/showAreaList";
     }
 
-//    @RequiresPermissions("attract:showAddArea")
+    //    @RequiresPermissions("attract:showAddArea")
     @GetMapping(value = "showAddArea")
     public String showAddArea(Model model) {
         List<AttracArea> list = attracAreaService.areaByParentId("0");
@@ -61,7 +61,7 @@ public class AttracAreaController {
     }
 
 
-//    @RequiresPermissions("attract:delArea")
+    //    @RequiresPermissions("attract:delArea")
     @PostMapping(value = "delArea")
     @ResponseBody
     public Result delArea(String id) {
@@ -70,7 +70,7 @@ public class AttracAreaController {
     }
 
 
-//    @RequiresPermissions("attract:updateArea")
+    //    @RequiresPermissions("attract:updateArea")
     @GetMapping(value = "showUpdateArea")
     public String updateArea(String id, Model model, boolean detail) {
         AttracArea attracArea = attracAreaService.getById(id);

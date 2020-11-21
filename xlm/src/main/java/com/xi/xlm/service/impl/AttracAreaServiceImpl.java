@@ -24,13 +24,11 @@ import java.util.List;
 public class AttracAreaServiceImpl extends ServiceImpl<AttracAreaMapper, AttracArea> implements IAttracAreaService {
     @Autowired  AttracAreaMapper aam;
     @Override
-    public IPage<AttracArea> list(Page<AttracArea> pages,String type) {
+    public IPage<AttracArea> list(Page<AttracArea> pages,String parent) {
         LambdaQueryWrapper<AttracArea> attracAreaLambdaQueryWrapper = new LambdaQueryWrapper<>();
         attracAreaLambdaQueryWrapper.eq(AttracArea::getInvalid,0);
-        if(type.equals("0")){
-            attracAreaLambdaQueryWrapper.eq(AttracArea::getParent,0);
-        }else{
-            attracAreaLambdaQueryWrapper.eq(AttracArea::getParent,type);
+        if(!"".equals(parent)){
+            attracAreaLambdaQueryWrapper.eq(AttracArea::getParent,parent);
         }
         return baseMapper.selectPage(pages, attracAreaLambdaQueryWrapper);
     }
@@ -47,6 +45,8 @@ public class AttracAreaServiceImpl extends ServiceImpl<AttracAreaMapper, AttracA
         if(attracAreas.size()>0){
             return 0;
         }
+        Long timeStamp = System.currentTimeMillis();
+        attracArea.setId(timeStamp.toString());
         return aam.addAttracArea(attracArea);
     }
 

@@ -21,15 +21,14 @@
             <div style="margin-left:25%">
                 <div class="layui-form-item">
                     <label for="parentArea" class="layui-form-label">
-                        <span class="x-red">*</span>父级
+                        <span class="x-red">*</span>父级ID
                     </label>
-                    <div class="layui-input-block" style="width:190px;">
-                        <select name="parentArea" id="parentArea" lay-verify="parentArea" lay-filter="parentArea">
-                            <option value="0">全国</option>
-                            <#list parentAreas as parentArea>
-                                <option value="${parentArea.id}">${parentArea.name}</option>
-                            </#list>
-                        </select>
+                    <div class="layui-input-inline">
+                        <input type="text" id="parentArea" name="parentArea" lay-verify="parentArea"
+                               autocomplete="off" class="layui-input">
+                    </div>
+                    <div id="ms" class="layui-form-mid layui-word-aux">
+                        <span class="x-red">*</span><span id="ums">必须填写</span>
                     </div>
                 </div>
                 <div class="layui-form-item">

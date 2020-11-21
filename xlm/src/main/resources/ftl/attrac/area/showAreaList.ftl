@@ -86,7 +86,7 @@
                     layer.close(index);
                 });
             } else if (obj.event === 'edit') {
-                update('编辑地址', '/m/attracArea/showUpdateArea?id=' + data.id, 700, 450);
+                update('编辑案例', '/m/attracArea/showUpdateArea?id=' + data.id, 700, 450);
             }
         });
     });
@@ -120,7 +120,34 @@
             shadeClose: false,
             shade: 0.4,
             title: title,
-            content: url + '&detail=false'
+            content: url + '&detail=false',
+            btn: ['确定', '取消'],
+            btnAlign: 'c',
+            yes: function(index, layero){
+                //按钮【按钮一】的回调
+                var areaId = layero.find("iframe")[0].contentWindow.$("#areaId").val();
+                var name = layero.find("iframe")[0].contentWindow.$("#name").val();
+                var data = {
+                    name: name,
+                    id: areaId
+                }
+                $.ajax({
+                    url: "/m/attracArea/updateArea",
+                    type: "post",
+                    data: data,
+                    success: function (d) {
+                        if (d.flag) {
+                            window.top.layer.msg(d.msg, {icon: 6, offset: 'rb', area: ['120px', '80px'], anim: 2});
+                            reloadTable();
+                            window.top.layer.close(index);
+                        } else {
+                            window.top.layer.msg(d.msg, {icon: 5, offset: 'rb', area: ['120px', '80px'], anim: 2});
+                        }
+                    }, error: function () {
+                        alert('error');
+                    }
+                });
+            }
         });
     }
 
@@ -160,7 +187,28 @@
             btnAlign: 'c',
             yes: function(index, layero){
                 //按钮【按钮一】的回调
-
+                var parentAreaId = layero.find("iframe")[0].contentWindow.$("#parentArea").val();
+                var name = layero.find("iframe")[0].contentWindow.$("#name").val();
+                var data = {
+                    name: name,
+                    parent: parentAreaId
+                }
+                $.ajax({
+                    url: "/m/attracArea/addArea",
+                    type: "post",
+                    data: data,
+                    success: function (d) {
+                        if (d.flag) {
+                            window.top.layer.msg(d.msg, {icon: 6, offset: 'rb', area: ['120px', '80px'], anim: 2});
+                            reloadTable();
+                            window.top.layer.close(index);
+                        } else {
+                            window.top.layer.msg(d.msg, {icon: 5, offset: 'rb', area: ['120px', '80px'], anim: 2});
+                        }
+                    }, error: function () {
+                        alert('error');
+                    }
+                });
             }
         });
     }
@@ -168,14 +216,13 @@
     function del(id) {
         var data = {id: id};
         $.ajax({
-            url: "delArea",
+            url: "/m/attracArea/delArea",
             type: "post",
             data: data,
             success: function (d) {
                 if (d.flag) {
                     window.top.layer.msg(d.msg, {icon: 6, offset: 'rb', area: ['120px', '80px'], anim: 2});
-                    layui.table.reload("citycaseList");
-
+                    reloadTable();
                 } else {
                     window.top.layer.msg(d.msg, {icon: 5, offset: 'rb', area: ['120px', '80px'], anim: 2});
                 }
@@ -190,7 +237,7 @@
         //这里以搜索为例
         tableIns.reload({
             where: {
-                type: $('#inputValue').val()//关键字
+                parent: $('#inputValue').val()//关键字
             }
             ,page: {
                 curr: 1 //重新从第 1 页开始
