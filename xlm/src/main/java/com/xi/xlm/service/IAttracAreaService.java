@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.xi.xlm.entity.AttracArea;
+import com.xi.xlm.entity.AttracAreaVo;
 
 import java.util.List;
 
@@ -17,7 +18,7 @@ import java.util.List;
  */
 public interface IAttracAreaService extends IService<AttracArea> {
 
-    IPage<AttracArea> list(Page<AttracArea> pages, String parent);
+    IPage<AttracAreaVo> list(Page<AttracArea> pages, String parent);
 
     List<AttracArea> areaByParentId(String parentId);
 

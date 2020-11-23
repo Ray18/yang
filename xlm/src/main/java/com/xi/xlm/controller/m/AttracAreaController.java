@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.len.util.Result;
 import com.xi.xlm.entity.AttracArea;
+import com.xi.xlm.entity.AttracAreaVo;
 import com.xi.xlm.service.IAttracAreaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -33,7 +34,7 @@ public class AttracAreaController {
         Page<AttracArea> pages = new Page<>();
         pages.setSize(limit);
         pages.setCurrent(page);
-        IPage<AttracArea> list = attracAreaService.list(pages,parent);
+        IPage<AttracAreaVo> list = attracAreaService.list(pages,parent);
         return Result.ok(list);
     }
 

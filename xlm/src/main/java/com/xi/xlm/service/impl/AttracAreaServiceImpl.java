@@ -2,11 +2,14 @@ package com.xi.xlm.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.core.metadata.OrderItem;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.xi.xlm.entity.AttracArea;
+import com.xi.xlm.entity.AttracAreaVo;
 import com.xi.xlm.mapper.AttracAreaMapper;
 import com.xi.xlm.service.IAttracAreaService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -24,13 +27,12 @@ import java.util.List;
 public class AttracAreaServiceImpl extends ServiceImpl<AttracAreaMapper, AttracArea> implements IAttracAreaService {
     @Autowired  AttracAreaMapper aam;
     @Override
-    public IPage<AttracArea> list(Page<AttracArea> pages,String parent) {
+    public IPage<AttracAreaVo> list(Page<AttracArea> pages, String parent) {
         LambdaQueryWrapper<AttracArea> attracAreaLambdaQueryWrapper = new LambdaQueryWrapper<>();
         attracAreaLambdaQueryWrapper.eq(AttracArea::getInvalid,0);
-        if(!"".equals(parent)){
-            attracAreaLambdaQueryWrapper.eq(AttracArea::getParent,parent);
-        }
-        return baseMapper.selectPage(pages, attracAreaLambdaQueryWrapper);
+        attracAreaLambdaQueryWrapper.eq(AttracArea::getParent,StringUtils.isNotBlank(parent)?parent:"");
+        IPage<AttracAreaVo> list = aam.findVoPage(pages, attracAreaLambdaQueryWrapper);
+        return list;
     }
 
     @Override

@@ -4,13 +4,12 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.len.util.Result;
 import com.xi.xlm.entity.Fwzx;
+import com.xi.xlm.entity.FwzxVo;
 import com.xi.xlm.entity.Parameter;
 import com.xi.xlm.enums.ParameterEnum;
 import com.xi.xlm.mapper.FwzxMapper;
 import com.xi.xlm.response.w.FWZXInfoResp;
 import com.xi.xlm.service.IParameterService;
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -61,7 +60,7 @@ public class HotelParameterController {
     public Result getFWZX2() {
         LambdaQueryWrapper<Fwzx> fwzxLambdaQueryWrapper = new LambdaQueryWrapper<>();
         fwzxLambdaQueryWrapper.eq(Fwzx::getId,1);
-        Fwzx fwzx = wzxMapper.selectOne(fwzxLambdaQueryWrapper);
+        FwzxVo fwzx = (FwzxVo) wzxMapper.selectOne(fwzxLambdaQueryWrapper);
         fwzx.setDetails(iParameterService.getParameterByCode(ParameterEnum.FWZX.value()).getDetails());
         return Result.ok(fwzx);
     }

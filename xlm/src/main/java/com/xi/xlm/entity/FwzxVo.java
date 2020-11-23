@@ -8,11 +8,8 @@ import lombok.Data;
  * @Description:
  */
 @Data
-public class Fwzx {
+public class FwzxVo extends Fwzx {
 
-    private Integer id;
-    private String  tel;
-    private String wx;
-    private String zj;
+    private String details;
 
 }

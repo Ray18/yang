@@ -115,13 +115,13 @@
 
         //自定义验证规则
         form.verify({
-            bannerDetails:function (){
-                if (layedit.getContent(index).replace(/\s*/g,"") == "") {
+            /*bannerDetails:function (){
+                if (layedit.getContent(index).replace(/\s*!/g,"") == "") {
                     return "详情不能为空";
                 }else{
                     layedit.sync(index);
                 }
-            },
+            },*/
         })
 
         $('#close').click(function () {

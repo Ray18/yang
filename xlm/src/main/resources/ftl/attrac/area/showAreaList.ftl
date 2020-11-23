@@ -68,6 +68,7 @@
                     style: 'background-color: #009688; color: #fff;'
                 }
                 , {field: 'name', title: '名称', width: '20%', sort: true}
+                , {field: 'parentname', title: '父级', width: '20%', sort: true}
                 , {field: 'parent', title: '父节点id', width: '20%', sort: true}
                 , {field: 'right', title: '操作', width: '20%', toolbar: "#bar"}
             ]]

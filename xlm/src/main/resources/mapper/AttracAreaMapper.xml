@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.xi.xlm.mapper.AttracAreaMapper">
+    <resultMap id="BaseResultMap" type="com.xi.xlm.entity.AttracArea">
+        <id column="id" jdbcType="VARCHAR" property="id"/>
+        <result column="name" jdbcType="VARCHAR" property="name"/>
+        <result column="parent"  jdbcType="VARCHAR" property="parent"/>
+        <result column="invalid"  jdbcType="INTEGER" property="invalid"/>
+    </resultMap>
 
+    <select id="findVoPage" resultType="com.xi.xlm.entity.AttracAreaVo">
+        SELECT a.*,
+            (case
+              when a.parent= 0 then "全国"
+              else (select b.name from attrac_area b where b.id = a.parent)
+            end
+            ) AS parentname
+        from attrac_area a
+        where 1=1
+        <if test="ew!=null">
+            <if test="ew.parent!=null and ew.parent!=''">
+                and a.parent = ${ew.parent}
+            </if>
+            <if test="ew.invalid!=null">
+                and a.invalid = ${ew.invalid}
+            </if>
+        </if>
+    </select>
 </mapper>

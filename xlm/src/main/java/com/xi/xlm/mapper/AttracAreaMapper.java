@@ -1,12 +1,13 @@
 package com.xi.xlm.mapper;
 
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.xi.xlm.entity.AttracArea;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.xi.xlm.entity.AttracArea;
-import org.apache.ibatis.annotations.Delete;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Select;
-import org.apache.ibatis.annotations.Update;
+import com.xi.xlm.entity.AttracAreaVo;
+import org.apache.ibatis.annotations.*;
 
 /**
  * <p>
@@ -28,4 +29,6 @@ public interface AttracAreaMapper extends BaseMapper<AttracArea> {
 
     @Select("Select * from attrac_area where id = #{id}")
     AttracArea getById(String id);
+
+    IPage<AttracAreaVo> findVoPage(@Param("page")Page<AttracArea> page, @Param("ew")LambdaQueryWrapper<AttracArea> attracAreaLambdaQueryWrapper);
 }
