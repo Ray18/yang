@@ -28,9 +28,9 @@ public class AttracAreaServiceImpl extends ServiceImpl<AttracAreaMapper, AttracA
     @Autowired  AttracAreaMapper aam;
     @Override
     public IPage<AttracAreaVo> list(Page<AttracArea> pages, String parent) {
-        LambdaQueryWrapper<AttracArea> attracAreaLambdaQueryWrapper = new LambdaQueryWrapper<>();
-        attracAreaLambdaQueryWrapper.eq(AttracArea::getInvalid,0);
-        attracAreaLambdaQueryWrapper.eq(AttracArea::getParent,StringUtils.isNotBlank(parent)?parent:"");
+        AttracArea attracAreaLambdaQueryWrapper = new AttracArea();
+        attracAreaLambdaQueryWrapper.setInvalid(0);
+        attracAreaLambdaQueryWrapper.setParent(StringUtils.isNotBlank(parent)?parent:"");
         IPage<AttracAreaVo> list = aam.findVoPage(pages, attracAreaLambdaQueryWrapper);
         return list;
     }

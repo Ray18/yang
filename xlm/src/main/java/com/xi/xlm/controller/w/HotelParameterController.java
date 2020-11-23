@@ -60,8 +60,12 @@ public class HotelParameterController {
     public Result getFWZX2() {
         LambdaQueryWrapper<Fwzx> fwzxLambdaQueryWrapper = new LambdaQueryWrapper<>();
         fwzxLambdaQueryWrapper.eq(Fwzx::getId,1);
-        FwzxVo fwzx = (FwzxVo) wzxMapper.selectOne(fwzxLambdaQueryWrapper);
-        fwzx.setDetails(iParameterService.getParameterByCode(ParameterEnum.FWZX.value()).getDetails());
+        Fwzx fwzx = wzxMapper.selectOne(fwzxLambdaQueryWrapper);
+        FwzxVo fv=new FwzxVo();
+        fv.setTel(fwzx.getTel());
+        fv.setWx(fwzx.getWx());
+        fv.setZj(fwzx.getZj());
+        fv.setDetails(iParameterService.getParameterByCode(ParameterEnum.FWZX.value()).getDetails());
         return Result.ok(fwzx);
     }
 }

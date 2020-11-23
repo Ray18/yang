@@ -58,6 +58,7 @@ public class WAttractProductController {
 
         QueryWrapper<AttractProductOrder> wrapper = new QueryWrapper<>();
         wrapper.eq(AttractProductOrder.WEB_MEMBER_ID, UPrincipal.getMember().getId());
+        wrapper.ge(AttractProductOrder.ORDER_STATE,1);
         wrapper.orderByDesc(AttractProductOrder.CREATE_DATE);
         List<AttractProductOrder> list = iAttractProductOrderService.list(wrapper);
         List<AttOrderListResp> resps = new ArrayList<>();

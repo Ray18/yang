@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
+  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xlm" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/xlm/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xy-core" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/xy-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xy-sys" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/xy-sys/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xy-web" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/xy-web/src/main/java" charset="UTF-8" />
   </component>
 </project>

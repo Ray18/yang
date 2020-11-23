@@ -130,3 +130,4 @@ team:
     - /w/hotel/hotelProduct/product
     - /w/att/product/notifyOrder
     - /m/attractDealerInfo/showAttracAreaList
+    - /w/hotel/parameter/getFWZX2

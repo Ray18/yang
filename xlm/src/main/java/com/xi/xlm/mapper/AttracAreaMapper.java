@@ -30,5 +30,5 @@ public interface AttracAreaMapper extends BaseMapper<AttracArea> {
     @Select("Select * from attrac_area where id = #{id}")
     AttracArea getById(String id);
 
-    IPage<AttracAreaVo> findVoPage(@Param("page")Page<AttracArea> page, @Param("ew")LambdaQueryWrapper<AttracArea> attracAreaLambdaQueryWrapper);
+    IPage<AttracAreaVo> findVoPage(@Param("page")Page<AttracArea> page, @Param("ew")AttracArea attracAreaLambdaQueryWrapper);
 }
