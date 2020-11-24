@@ -66,6 +66,6 @@ public class HotelParameterController {
         fv.setWx(fwzx.getWx());
         fv.setZj(fwzx.getZj());
         fv.setDetails(iParameterService.getParameterByCode(ParameterEnum.FWZX.value()).getDetails());
-        return Result.ok(fwzx);
+        return Result.ok(fv);
     }
 }
