@@ -10,7 +10,7 @@
 <body>
 <div class="x-body">
     <form class="layui-form layui-form-pane" style="margin-left: 20px;">
-        <div style="width:100%;height:400px;overflow: auto;">
+        <div style="width:100%;overflow: auto;">
             <input type="hidden" id="fwzxId" value="${fwzx.id}">
             <div style="margin-left:25%">
                 <div class="layui-form-item">

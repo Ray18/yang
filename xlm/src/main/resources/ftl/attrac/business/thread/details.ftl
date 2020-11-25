@@ -9,7 +9,7 @@
 <body>
 <div class="x-body">
     <form class="layui-form layui-form-pane" style="margin-left: 20px;">
-        <div style="width:100%;height:400px;overflow: auto;">
+        <div style="width:100%;overflow: auto;">
             <div class="layui-form-item">
                 <label for="title" class="layui-form-label">
                     客户城市:

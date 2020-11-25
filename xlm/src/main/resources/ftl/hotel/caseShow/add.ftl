@@ -10,7 +10,7 @@
 <body>
 <div class="x-body">
     <form class="layui-form layui-form-pane" style="margin-left: 20px;">
-        <div style="width:100%;height:400px;overflow: auto;">
+        <div style="width:100%;overflow: auto;">
             <label for="title" class="layui-form-label">
                 <span class="x-red">*</span>产品名称
             </label>
