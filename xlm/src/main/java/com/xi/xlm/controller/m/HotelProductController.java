@@ -1,6 +1,7 @@
 package com.xi.xlm.controller.m;
 
 
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.len.base.BaseController;
@@ -8,10 +9,13 @@ import com.len.util.Result;
 import com.xi.xlm.entity.HotelProduct;
 import com.xi.xlm.service.IHotelProductService;
 import lombok.AllArgsConstructor;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.Date;
 
 /**
  * <p>
@@ -63,6 +67,10 @@ public class HotelProductController extends BaseController {
     @PostMapping("update")
     @ResponseBody
     public Result update(HotelProduct parameter) {
+        //, price =?, up =?, case_name =?,
+        parameter.setPrice(StringUtils.isNotBlank(parameter.getPrice())?parameter.getPrice():"0");
+        parameter.setUp(parameter.isUp());
+        parameter.setCaseName(StringUtils.isNotBlank(parameter.getCaseName())?parameter.getCaseName():"");
         iHotelProductService.updateById(parameter);
         return Result.ok();
     }
