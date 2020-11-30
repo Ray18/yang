@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * <p>
@@ -51,8 +52,12 @@ public class WHotelCaseController {
         List<ListCaseResp> respList = new ArrayList<>();
         QueryWrapper<HotelCase> wrapper = new QueryWrapper<>();
         wrapper.eq(HotelCase.UP, true);
-        wrapper.eq(req.getHotelType() != null, HotelCase.HOTEL_TYPE, req.getHotelType());
-        wrapper.like(StringUtils.hasText(req.getTitle()), HotelCase.PROJECT_NAME, req.getTitle());
+        if(Objects.nonNull(req.getHotelType())){
+            wrapper.eq(HotelCase.HOTEL_TYPE, req.getHotelType());
+        }
+        if(Objects.nonNull(req.getTitle())){
+            wrapper.like(HotelCase.PROJECT_NAME, req.getTitle());
+        }
 
         //地区等于空的时候直接报错
         if (!StringUtils.hasText(req.getArea())) {
