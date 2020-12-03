@@ -63,6 +63,8 @@ public class AttractThreadServiceImpl extends ServiceImpl<AttractThreadMapper, A
 
             QueryWrapper<AttractEmployeeInfo> wrapper = new QueryWrapper<>();
             wrapper.eq(AttractEmployeeInfo.AREA_CODE, attracArea.getId());
+            wrapper.eq(AttractEmployeeInfo.DEL_FLAG, 0);
+            wrapper.last("limit 1 ");
             AttractEmployeeInfo attractEmployeeInfo = iAttractEmployeeInfoService.getOne(wrapper);
             if (attractEmployeeInfo == null) {
                 throw new ServiceException("未搜索到相应区域经理");
