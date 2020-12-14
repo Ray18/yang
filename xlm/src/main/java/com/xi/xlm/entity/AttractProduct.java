@@ -32,7 +32,7 @@ public class AttractProduct extends BaseEntity implements Serializable {
 
     private String productName;
 
-    private BigDecimal price;
+    private String price;
     private String coverImg;
 
     private String productDetails;

@@ -22,7 +22,7 @@ public class AddAttractProduct {
     /**
      * 价格
      */
-    private String price;
+    private BigDecimal price;
 
     /**
      * 封面

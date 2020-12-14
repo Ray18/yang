@@ -42,23 +42,26 @@
                 <fieldset class="layui-elem-field layui-field-title" style="margin-top: 10px;">
                     <legend style="font-size:16px;">详情修改</legend>
                 </fieldset>
-                <textarea id="details" name="details" lay-verify="details">
+                <textarea id="demo" name="details" lay-verify="details">
                     ${model.details}
                 </textarea>
             </div>
 
         </div>
-        <div style="width: 100%;height: 55px;background-color: white;border-top:1px solid #e6e6e6;
-  position: fixed;bottom: 1px;margin-left:-20px;">
-            <div class="layui-form-item" style=" float: right;margin-right: 30px;margin-top: 8px">
-                <button class="layui-btn layui-btn-normal" lay-filter="add" lay-submit="">
-                    确认
-                </button>
-                <button class="layui-btn layui-btn-primary" id="close">
-                    取消
-                </button>
-            </div>
-        </div>
+        <#if !detail>
+                   <div style="width: 100%;height: 55px;background-color: white;border-top:1px solid #e6e6e6;
+             position: fixed;bottom: 1px;margin-left:-20px;">
+                       <div class="layui-form-item" style=" float: right;margin-right: 30px;margin-top: 8px">
+                           <button class="layui-btn layui-btn-normal" lay-filter="add" lay-submit>
+                               确定
+                           </button>
+                           <button class="layui-btn layui-btn-primary" id="close">
+                               取消
+                           </button>
+
+                       </div>
+                   </div>
+               </#if>
 
     </form>
 </div>
@@ -83,7 +86,7 @@
             wordCount : false //是否开启字数统计
         });
 
-        // var layedit = layui.layedit;
+         var layedit = layui.layedit;
         // layedit.set({
         //     uploadImage: {
         //         url: '../../m/common/layUpload' //接口url
@@ -120,17 +123,17 @@
             }
         })
 
-        $('#close').click(function () {
-            var index = parent.layer.getFrameIndex(window.name);
-            parent.layer.close(index);
-        });
-        //监听提交
-        form.on('submit(add)', function (data) {
-            layerAjax('update', data.field, 'proList');
-            return false;
-        });
-        form.render();
-    });
+       $('#close').click(function () {
+           var index = parent.layer.getFrameIndex(window.name);
+           parent.layer.close(index);
+       });
+       //监听提交
+       form.on('submit(add)', function (data) {
+           layerAjax('update', data.field, 'proList');
+           return false;
+       });
+       form.render();
+   });
 </script>
 </body>
 
